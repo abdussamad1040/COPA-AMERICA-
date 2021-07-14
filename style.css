@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    height: 677px;
+    width: 100%;
+    background-image: linear-gradient( 90deg, #0007e4, blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-width {
+    width: 1300px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.nav-name {
+    list-style: none;
+    display: flex;
+}
+
+.nav-name a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 0 28px 0 0;
+}
+
+.button-all {
+    background-color: #e9017d;
+    color: #fff;
+    font-size: 16px;
+    padding: 6px 17px;
+    text-decoration: none;
+    transition: border-radius 0.3s, transform 0.5s;
+}
+
+.button-all:hover {
+    border-radius: 20px;
+    transform: scale(1.1);
+}
+
+.button-all a {
+    color: #fff;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.home-banner {
+    display: flex;
+    width: 1300px;
+}
+
+.half-width {
+    width: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.half-width h1 {
+    width: 74%;
+    font-size: 64px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.half-width img {
+    width: 100%;
+}
+.valo {
+    text-decoration: none;
+    background-image: linear-gradient(rgb(0, 54, 170) rgba(161, 115, 28, 0.815));
+    padding: 20px 55px;
+    color: brown;
+    font-weight: 800;
+    border-radius: 4px;   
+}
+.player-part{
+    width: 1010px;
+    margin: 0 auto;
+    margin-top: 65px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    grid-auto-flow: 27px;
+}
+.player{
+    width: 300px;
+    height: 470px;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 30px gray;
+    margin-left: 25px;
+    padding: 10px;
+}
+.player-image img{
+    height: 260px;
+    width: 100%;
+}
+.player-info p{
+    font-size: 10px;
+    color: gray;
+    font-weight: 400px;
+}
+.player-info h2{
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+footer,
+.footerDiv {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    height: 300px;
+}
+
+footer img {
+    width: 400px;
+}
+
+footer i {
+    font-weight: 400;
+    padding: 15px;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 15px 0px 20px 10px;
+    color: #c7c7c7;
+}
+
+footer p {
+    color: #000000;
+    font-size: 18px;
+}
+
+.fa-instagram:hover {
+    color: rgb(250, 78, 10);
+}
+
+.fa-facebook:hover {
+    color: rgb(82, 10, 250);
+}
+
+.fa-youtube:hover {
+    color: rgb(250, 38, 10);
+}
+
+.fa-twitter:hover {
+    color: rgb(25, 6, 197);
+}
+@media only screen and (max-width:688px) {
+    header {
+        height: 100%;
+    }
+    .nav-width {
+        width: 100%;
+    }
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav-name {
+        display: none;
+    }
+    .home-banner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .half-width {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .half-width h1 {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .pleyers {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section-more {
+        width: 100%;
+    }
+    .highlights-text {
+        width: 100%;
+        padding: 10px;
+    }
+    .highlights-text p {
+        padding: 0 10px 10px 5px;
+    }
+    .ImGID {
+        padding-top: 20px;
+    }
+    .moreAll {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer,
+    .footerDiv {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #f7f9fc;
+    }
+    footer img {
+        width: 200px;
+    }
+}
+
